@@ -1,0 +1,17 @@
+<!-- app.component.html -->
+<div class="content-wrap">
+    <igx-nav-drawer id="navigation" #drawer [isOpen]="true">
+      <ng-template igxDrawer>
+        <nav>
+          <span igxDrawerItem [isHeader]="true"> OPTIONS </span>
+          <span igxDrawerItem routerLink="home"> HOME </span>
+          <span igxDrawerItem routerLink="user"> USER </span>
+          <span igxDrawerItem routerLink="data-binding"> DATA BINDING </span>
+        </nav>
+      </ng-template>
+    </igx-nav-drawer>
+    <main>
+      <!-- app content -->
+    </main>
+  </div>
+  

@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/toast.css";
+@import "./assets/styles/igx-theme.scss";
+@import "./assets/styles/variables.scss";
+@import "./assets/styles/igx-navbar.scss";

@@ -1,0 +1,49 @@
+<div *ngIf="dataLoaded==false" class="spinner-border text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+</div>
+<table *ngIf="dataLoaded==true" class ="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <div>
+        <ul>
+          <li *ngFor="let todo of todos">
+            {{todo.id}}
+            {{todo.name}}
+            {{todo.surname}}
+            {{todo.age}}
+            {{todo.country}}
+          </li>
+        </ul>
+      </div>
+</table>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1"></span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon2"></span>
+  <input type="text" class="form-control" placeholder="Surname" aria-label="Surname" aria-describedby="basic-addon2">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon3"></span>
+  <input type="text" class="form-control" placeholder="Age" aria-label="Age" aria-describedby="basic-addon3">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon4"></span>
+  <input type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="basic-addon4">
+</div>
+
+<div class="input-group mb-3">
+  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Save</button>
+</div>
